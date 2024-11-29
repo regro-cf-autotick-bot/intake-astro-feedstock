@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
 
@@ -24,7 +24,7 @@ requirements:
     - python >=3.5
     - intake >=0.3
     - scipy
-    - astropy
+    - astropy-base
 
 test:
   imports:
